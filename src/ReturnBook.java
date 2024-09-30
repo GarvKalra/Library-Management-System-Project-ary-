@@ -26,7 +26,7 @@ public class ReturnBook extends javax.swing.JFrame {
         initComponents();
     }
     public void clear(){
-        txtbookid.setText("");
+       // txtbookid.setText("");
         txtbookname.setText("");
         txtduedate.setText("");
         txtissuedate.setText("");
@@ -44,7 +44,6 @@ public class ReturnBook extends javax.swing.JFrame {
 
         jButton6 = new javax.swing.JButton();
         txtduedate = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         txtissuedate = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -52,7 +51,6 @@ public class ReturnBook extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtbookname = new javax.swing.JTextField();
-        txtbookid = new javax.swing.JTextField();
         txtstudentid = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -73,18 +71,14 @@ public class ReturnBook extends javax.swing.JFrame {
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1088, 0, 50, -1));
 
         txtduedate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtduedate, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 560, 350, 40));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setText("Book ID");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 270, 50));
+        getContentPane().add(txtduedate, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 500, 350, 40));
 
         txtissuedate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtissuedate, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 350, 40));
+        getContentPane().add(txtissuedate, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, 350, 40));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Student ID");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 270, 50));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 270, 50));
 
         jButton1.setBackground(new java.awt.Color(204, 0, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -95,34 +89,31 @@ public class ReturnBook extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 640, 130, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, 130, 40));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setText("Issue Date");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 490, 270, 50));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 420, 270, 50));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel6.setText("Book Name");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 220, 50));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 220, 50));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setText("Due Date");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 560, 270, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 490, 270, 50));
 
         txtbookname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtbookname, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 410, 350, 40));
-
-        txtbookid.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtbookid, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, 350, 40));
+        getContentPane().add(txtbookname, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 350, 40));
 
         txtstudentid.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtstudentid, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 350, 40));
+        getContentPane().add(txtstudentid, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 200, 350, 40));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/isue.jpg"))); // NOI18N
         jLabel1.setText("Return Book");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 240, 60));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 240, 60));
 
         jButton2.setBackground(new java.awt.Color(204, 0, 0));
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -133,16 +124,16 @@ public class ReturnBook extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(696, 267, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 580, 110, 40));
 
         txtstudentname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtstudentname, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, 350, 40));
+        getContentPane().add(txtstudentname, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 350, 40));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel8.setText("Student Name");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, 220, 50));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 220, 50));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/All Page Backgraound.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/log in new.jpg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, 1140, 770));
 
         pack();
@@ -161,7 +152,7 @@ public class ReturnBook extends javax.swing.JFrame {
             rs=pst.executeQuery();
             if(rs.next()){
                     txtbookname.setText(rs.getString("name"));
-                    txtbookid.setText(rs.getString("id"));
+                //    txtbookid.setText(rs.getString("id"));
                     txtissuedate.setText(rs.getString("issue"));
                     txtduedate.setText(rs.getString("due"));
             }
@@ -179,7 +170,7 @@ public class ReturnBook extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(txtbookid.getText().equals("")){
+     /*   if(txtbookid.getText().equals("")){
                 JOptionPane.showMessageDialog(rootPane, "Please enter Student ID and Search it again");
                 txtstudentid.requestFocus();
         }
@@ -193,7 +184,7 @@ public class ReturnBook extends javax.swing.JFrame {
             } catch (SQLException ex) {
                 Logger.getLogger(SignIn.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+        }*/
             // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -237,14 +228,12 @@ public class ReturnBook extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField txtbookid;
     private javax.swing.JTextField txtbookname;
     private javax.swing.JTextField txtduedate;
     private javax.swing.JTextField txtissuedate;

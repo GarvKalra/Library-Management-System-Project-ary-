@@ -24,7 +24,6 @@ public class StudentRegistration extends javax.swing.JFrame {
         initComponents();
     }
 public void clear(){
-        txtbranch.setText("");
         txtcourse.setText("");
         txtid.setText("");
         txtname.setText("");
@@ -43,14 +42,12 @@ public void clear(){
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtcourse = new javax.swing.JTextField();
         txtid = new javax.swing.JTextField();
         txtname = new javax.swing.JTextField();
         txtsem = new javax.swing.JTextField();
-        txtbranch = new javax.swing.JTextField();
         btnsave = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
@@ -70,42 +67,35 @@ public void clear(){
         jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/isue.jpg"))); // NOI18N
         jLabel1.setText("Student Registration");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 250, 60));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 250, 60));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("Student ID");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 239, 46));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 239, 46));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Student Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 239, 46));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel5.setText("Branch Name");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 239, 46));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 239, 46));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel6.setText(" Course Name");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 239, 46));
+        jLabel6.setText("Div");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 239, 46));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel7.setText("Semester");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, 239, 46));
+        jLabel7.setText("Std");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 239, 46));
 
         txtcourse.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        getContentPane().add(txtcourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, 310, 40));
+        getContentPane().add(txtcourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, 310, 40));
 
         txtid.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 310, 40));
+        getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 310, 40));
 
         txtname.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        getContentPane().add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 310, 40));
+        getContentPane().add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 310, 40));
 
         txtsem.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        getContentPane().add(txtsem, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, 310, 40));
-
-        txtbranch.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        getContentPane().add(txtbranch, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 310, 40));
+        getContentPane().add(txtsem, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, 310, 40));
 
         btnsave.setBackground(new java.awt.Color(204, 0, 0));
         btnsave.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -116,9 +106,9 @@ public void clear(){
                 btnsaveActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, 110, 30));
+        getContentPane().add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 480, 110, 30));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/All Page Backgraound.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/log in new.jpg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 770));
 
         pack();
@@ -145,10 +135,7 @@ public void clear(){
                 JOptionPane.showMessageDialog(rootPane, "Please enter Course");
                 txtcourse.requestFocus();
         }
-        else if(txtbranch.getText().equals("")){
-                JOptionPane.showMessageDialog(rootPane, "Please enter Branch of Student");
-                txtbranch.requestFocus();
-        }
+        
         else if(txtsem.getText().equals("")){
                 JOptionPane.showMessageDialog(rootPane, "Please enter Semester");
                 txtsem.requestFocus();
@@ -159,7 +146,6 @@ public void clear(){
             pst.setString(1, txtid.getText());
             pst.setString(2, txtname.getText());
             pst.setString(3, txtcourse.getText());
-            pst.setString(4, txtbranch.getText());
             pst.setString(5, txtsem.getText());
             pst.executeUpdate();
             JOptionPane.showMessageDialog(rootPane, "Record Saved","Saved",JOptionPane.INFORMATION_MESSAGE);
@@ -214,10 +200,8 @@ public void clear(){
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField txtbranch;
     private javax.swing.JTextField txtcourse;
     private javax.swing.JTextField txtid;
     private javax.swing.JTextField txtname;

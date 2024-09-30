@@ -132,8 +132,8 @@ public class SignIn extends javax.swing.JFrame {
         jLabel1.setText("User ID");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, 80, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/login page.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 770));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/log in new.jpg"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 1370, 770));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -50,10 +50,37 @@ public class Loading2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
         jLabel = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jLayeredPane2 = new javax.swing.JLayeredPane();
+        jLayeredPane3 = new javax.swing.JLayeredPane();
+        jLayeredPane4 = new javax.swing.JLayeredPane();
+        jLayeredPane5 = new javax.swing.JLayeredPane();
+        jLayeredPane6 = new javax.swing.JLayeredPane();
+        jLayeredPane7 = new javax.swing.JLayeredPane();
+        jLayeredPane8 = new javax.swing.JLayeredPane();
+        jLabel14 = new javax.swing.JLabel();
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/apimg smller.jpg"))); // NOI18N
+        jLabel11.setText("Issue Book");
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/apimg smller.jpg"))); // NOI18N
+        jLabel10.setText("Issue Book");
+        jLabel10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/intro2 img.jpg"))); // NOI18N
+        jLabel2.setToolTipText("");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 255, 51));
@@ -61,20 +88,40 @@ public class Loading2 extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 0));
+        jPanel1.setToolTipText("");
+        jPanel1.setAutoscrolls(true);
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(204, 0, 0));
         jLabel1.setForeground(new java.awt.Color(204, 0, 153));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Picsart_23-10-30_17-47-04-022.jpg"))); // NOI18N
+        jLabel1.setToolTipText("");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 630, -1));
 
         jProgressBar1.setBackground(new java.awt.Color(0, 0, 153));
         jProgressBar1.setForeground(new java.awt.Color(0, 0, 153));
         jProgressBar1.setStringPainted(true);
-        jPanel1.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 650, 16));
+        jPanel1.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 650, 20));
         jPanel1.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 247, 22));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/apimg smller.jpg"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, 260, 90));
+        jPanel1.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, -1, -1));
+        jPanel1.add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, -1, -1));
+        jPanel1.add(jLayeredPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, -1, -1));
+        jPanel1.add(jLayeredPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, -1, -1));
+        jPanel1.add(jLayeredPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, -1, -1));
+        jPanel1.add(jLayeredPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, -10, -1, -1));
+        jPanel1.add(jLayeredPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 10, -1, -1));
+        jPanel1.add(jLayeredPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 140, 100));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/intro2 img.jpg"))); // NOI18N
+        jLabel14.setText("jLabel14");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 790, 500));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 910, 530));
 
         pack();
         setLocationRelativeTo(null);
@@ -118,6 +165,19 @@ public class Loading2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLayeredPane jLayeredPane2;
+    private javax.swing.JLayeredPane jLayeredPane3;
+    private javax.swing.JLayeredPane jLayeredPane4;
+    private javax.swing.JLayeredPane jLayeredPane5;
+    private javax.swing.JLayeredPane jLayeredPane6;
+    private javax.swing.JLayeredPane jLayeredPane7;
+    private javax.swing.JLayeredPane jLayeredPane8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JProgressBar jProgressBar1;
     // End of variables declaration//GEN-END:variables

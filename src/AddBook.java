@@ -22,7 +22,7 @@ public class AddBook extends javax.swing.JFrame {
         initComponents();
     }
     public void clear(){
-        txtid.setText("");
+     //   txtid.setText("");
         txtname.setText("");
         txtprice.setText("");
         txtpublisher.setText("");
@@ -41,7 +41,6 @@ public class AddBook extends javax.swing.JFrame {
 
         jButton6 = new javax.swing.JButton();
         txtyear = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         txtprice = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -49,7 +48,6 @@ public class AddBook extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtpublisher = new javax.swing.JTextField();
-        txtid = new javax.swing.JTextField();
         txtname = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -67,18 +65,14 @@ public class AddBook extends javax.swing.JFrame {
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1088, 0, 50, 31));
 
         txtyear.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtyear, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 570, 320, 36));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setText("Book ID");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 239, 46));
+        getContentPane().add(txtyear, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 560, 320, 36));
 
         txtprice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 470, 320, 40));
+        getContentPane().add(txtprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 460, 320, 40));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Book Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 239, 46));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 239, 46));
 
         jButton1.setBackground(new java.awt.Color(204, 0, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -93,32 +87,29 @@ public class AddBook extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setText("Price");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 470, 239, 46));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 460, 239, 46));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel6.setText("Publisher");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 239, 46));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 239, 46));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setText("Publisher Year");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 560, 239, 46));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 560, 239, 46));
 
         txtpublisher.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtpublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 320, 40));
-
-        txtid.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 320, 40));
+        getContentPane().add(txtpublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, 320, 40));
 
         txtname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 320, 40));
+        getContentPane().add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, 320, 40));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(242, 242, 242));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/isue.jpg"))); // NOI18N
-        jLabel1.setText("Add Book Details");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 230, 53));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/apimg smller.jpg"))); // NOI18N
+        jLabel1.setText("Add Book ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 270, 80));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/All Page Backgraound.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/log in new.jpg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 770));
 
         pack();
@@ -133,7 +124,7 @@ public class AddBook extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         PreparedStatement pst;
         Connection c=Connect.ConnectToDB();
-        if(txtid.getText().equals("")){
+     /*   if(txtid.getText().equals("")){
                 JOptionPane.showMessageDialog(rootPane, "Please enter Book ID");
                 txtid.requestFocus();
         }
@@ -168,7 +159,7 @@ public class AddBook extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(SignIn.class.getName()).log(Level.SEVERE, null, ex);
         } 
-            }// TODO add your handling code here:
+            }*/// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -210,13 +201,11 @@ public class AddBook extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField txtid;
     private javax.swing.JTextField txtname;
     private javax.swing.JTextField txtprice;
     private javax.swing.JTextField txtpublisher;
