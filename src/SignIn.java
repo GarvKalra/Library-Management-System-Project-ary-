@@ -190,7 +190,7 @@ public class SignIn extends javax.swing.JFrame {
         ResultSet rs;
         Connection c=Connect.ConnectToDB();
         try {
-            pst=c.prepareStatement("SELECT * FROM library.login where userid=? AND password=?");
+            pst=c.prepareStatement("SELECT * FROM libfinal.login where userid=? AND password=?");
             pst.setString(1,txtemail.getText());
             pst.setString(2, txtpassword.getText());
             rs=pst.executeQuery();
