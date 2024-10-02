@@ -1,5 +1,3 @@
-
-
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import java.sql.Connection;

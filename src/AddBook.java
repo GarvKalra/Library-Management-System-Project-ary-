@@ -26,7 +26,7 @@ public class AddBook extends javax.swing.JFrame {
         txtname.setText("");
         txtprice.setText("");
         txtpublisher.setText("");
-        txtyear.setText("");
+        //txtyear.setText("");
        
     }
 
@@ -40,17 +40,21 @@ public class AddBook extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton6 = new javax.swing.JButton();
-        txtyear = new javax.swing.JTextField();
         txtprice = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         txtpublisher = new javax.swing.JTextField();
         txtname = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -64,15 +68,12 @@ public class AddBook extends javax.swing.JFrame {
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1088, 0, 50, 31));
 
-        txtyear.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        getContentPane().add(txtyear, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 560, 320, 36));
-
         txtprice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(txtprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 460, 320, 40));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Book Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 239, 46));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 239, 46));
 
         jButton1.setBackground(new java.awt.Color(204, 0, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -83,7 +84,7 @@ public class AddBook extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 670, 120, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 590, 120, 30));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setText("Price");
@@ -92,10 +93,6 @@ public class AddBook extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel6.setText("Publisher");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 239, 46));
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel7.setText("Publisher Year");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 560, 239, 46));
 
         txtpublisher.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(txtpublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, 320, 40));
@@ -110,7 +107,25 @@ public class AddBook extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 270, 80));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/log in new.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 770));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1140, 770));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel8.setText("Book Name");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 239, 46));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel9.setText("Book Name");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 239, 46));
+
+        jScrollPane1.setViewportView(jTextPane1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, 250, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -123,7 +138,51 @@ public class AddBook extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         PreparedStatement pst;
-        Connection c=Connect.ConnectToDB();
+    Connection c = Connect.ConnectToDB();  // Assuming ConnectToDB is a method returning a DB connection
+    if(txtname.getText().equals("")){
+        JOptionPane.showMessageDialog(rootPane, "Please enter Book Name");
+        txtname.requestFocus();
+    }
+    else if(txtpublisher.getText().equals("")){
+        JOptionPane.showMessageDialog(rootPane, "Please enter Publisher");
+        txtpublisher.requestFocus();
+    }
+    else if(txtprice.getText().equals("")){
+        JOptionPane.showMessageDialog(rootPane, "Please enter Book Price");
+        txtprice.requestFocus();
+    }
+    /*else if(txtyear.getText().equals("")){
+        JOptionPane.showMessageDialog(rootPane, "Please enter Publication Year");
+        txtyear.requestFocus();
+    }*/
+    else{
+        try {
+            // Insert query for the book details into the table 'book' in the database 'library'
+            String sql = "\"INSERT INTO new_bitwise(title, price, publisher) VALUES (?, ?, ?))";
+
+            // Prepare the statement
+            pst = c.prepareStatement(sql);
+
+            // Set the values for each field
+            pst.setString(1, txtname.getText());           // Book Name
+            pst.setString(2, txtpublisher.getText());      // Publisher
+            pst.setString(3, txtprice.getText());          // Price
+            //pst.setString(4, txtyear.getText());           // Publication Year
+            //pst.setString(5, "NotIssued");                 // Default Status is NotIssued
+
+            // Execute the insert statement
+            pst.executeUpdate();
+            
+            // Confirmation message after successful insertion
+            JOptionPane.showMessageDialog(rootPane, "Record Saved", "Saved", JOptionPane.INFORMATION_MESSAGE);
+            
+            // Clear the input fields after saving
+            clear();
+        } catch (SQLException ex) {
+            Logger.getLogger(AddBook.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(rootPane, "Error Saving Record: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
      /*   if(txtid.getText().equals("")){
                 JOptionPane.showMessageDialog(rootPane, "Please enter Book ID");
                 txtid.requestFocus();
@@ -177,7 +236,7 @@ public class AddBook extends javax.swing.JFrame {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
-            }
+            }   
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(AddBook.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
@@ -205,10 +264,14 @@ public class AddBook extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextField txtname;
     private javax.swing.JTextField txtprice;
     private javax.swing.JTextField txtpublisher;
-    private javax.swing.JTextField txtyear;
     // End of variables declaration//GEN-END:variables
 }

@@ -16,7 +16,7 @@ public class Connect {
     static Connection con=null;
     public static Connection ConnectToDB() {
         try {
-             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root","1234");
+             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/libfinal","root","#Blossom84#");
         } catch (SQLException ex) {
             Logger.getLogger(Connect.class.getName()).log(Level.SEVERE, null, ex);
         }
